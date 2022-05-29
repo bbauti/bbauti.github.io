@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIkit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+</head>
+<body>
+    <h1 class="uk-heading-xlarge uk-text-center ">BBAUTI</h1>
+    <h3 class="uk-text-center">UIKit</h3>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Acordeon</h1>
+    <ul uk-accordion>
+        <li>
+            <a class="uk-accordion-title" href="#">Titulo 1</a>
+            <div class="uk-accordion-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </li>
+        <li class="uk-open">
+            <a class="uk-accordion-title" href="#">Titulo 2</a>
+            <div class="uk-accordion-content">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor reprehenderit.</p>
+            </div>
+        </li>
+        <li>
+            <a class="uk-accordion-title" href="#">Titulo 3</a>
+            <div class="uk-accordion-content">
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</p>
+            </div>
+        </li>
+    </ul>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Notificaciones</h1>
+    <div uk-alert>
+        <a class="uk-alert-close" uk-close></a>
+        <h3>Aviso!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Articulos</h1>
+    <article class="uk-article">
+        <h1 class="uk-article-title">Nombre</h1>
+        <p class="uk-article-meta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam laboriosam possimus ullam tempore minus nisi qui nobis numquam, praesentium, illum cumque pariatur animi eum, maxime voluptatem provident veritatis perspiciatis quasi!</p>
+    </article>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Breadcrumb</h1>
+    <ul class="uk-breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categoria 1</a></li>
+        <li class="uk-disabled"><a>Categoria deshabilitada</a></li>
+        <li><span>Breadcrumb</span></li>
+    </ul>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Botones</h1>
+    <p uk-margin>
+        <button class="uk-button uk-button-default">Default</button>
+        <button class="uk-button uk-button-primary">Primary</button>
+        <button class="uk-button uk-button-secondary">Secondary</button>
+        <button class="uk-button uk-button-danger">Danger</button>
+        <button class="uk-button uk-button-text">Text</button>
+        <button class="uk-button uk-button-link">Link</button>
+    </p>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Cartas</h1>
+    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Default</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-primary uk-card-body">
+                <h3 class="uk-card-title">Primaria</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-secondary uk-card-body">
+                <h3 class="uk-card-title">Secundaria</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Popups</h1>
+    <div class="uk-inline">
+        <button class="uk-button uk-button-default" type="button">Popup 1</button>
+        <div uk-drop="mode: click">
+            <div class="uk-card uk-card-body uk-card-default">
+                <button class="uk-drop-close" type="button" uk-close></button>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div>
+        </div>
+    </div>
+    <a class="uk-button uk-button-default" href="#modal" uk-toggle>Popup 2</a>
+    <div id="modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <h2 class="uk-modal-title">Titulo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="uk-text-right">
+                <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                <button class="uk-button uk-button-primary" type="button">Save</button>
+            </p>
+        </div>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Columnas</h1>
+    <div class="uk-column-1-2 uk-column-divider">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+        <blockquote cite="#" class="uk-column-span">
+            <p>All we have to decide is what to do with the time that is given us.</p>
+            <footer>Gandalf in in <cite><a href="">The Fellowship of the Ring</a></cite></footer>
+        </blockquote>
+    
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Countdown</h1>
+    <h3 class="uk-text-center">Fin del sprint</h3>
+    <div class="uk-grid-small uk-child-width-auto uk-margin" uk-grid uk-countdown="date: 2022-06-17T09:00:00-03:00">
+        <div>
+            <div class="uk-countdown-number uk-countdown-days"></div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+            <div class="uk-countdown-number uk-countdown-hours"></div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+            <div class="uk-countdown-number uk-countdown-minutes"></div>
+        </div>
+        <div class="uk-countdown-separator">:</div>
+        <div>
+            <div class="uk-countdown-number uk-countdown-seconds"></div>
+        </div>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Lista de descripciones</h1>
+    <dl class="uk-description-list">
+        <dt>Descripcion 1</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</dd>
+        <dt>Descripcion 2</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+        <dt>Descripcion 3</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</dd>
+    </dl>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Menus</h1>
+    <button class="uk-button uk-button-default" type="button">Hover</button>
+    <div class="uk-width-large" uk-dropdown>
+        <div class="uk-dropdown-grid uk-child-width-1-2@m" uk-grid>
+            <div>
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Activo 1</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Titulo 1</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li class="uk-active"><a href="#">Activo 2</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Titulo 2</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Formularios</h1>
+    <form>
+        <fieldset class="uk-fieldset">
+            <legend class="uk-legend">Titulo</legend>
+            <div class="uk-margin">
+                <input class="uk-input" type="text" placeholder="Usuario">
+            </div>
+            <div class="uk-margin">
+                <select class="uk-select">
+                    <option>Opcion 1</option>
+                    <option>Opcion 2</option>
+                </select>
+            </div>
+            <div class="uk-margin">
+                <textarea class="uk-textarea" rows="5" placeholder="Texto"></textarea>
+            </div>
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label><input class="uk-radio" type="radio" name="radio2" checked> A</label>
+                <label><input class="uk-radio" type="radio" name="radio2"> B</label>
+            </div>
+            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                <label><input class="uk-checkbox" type="checkbox" checked> A</label>
+                <label><input class="uk-checkbox" type="checkbox"> B</label>
+            </div>
+            <div class="uk-margin">
+                <input class="uk-range" type="range" value="2" min="0" max="10" step="0.1">
+            </div>
+        </fieldset>
+    </form>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Cuadriculas</h1>
+    <div class="uk-grid-small uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+    </div>
+    <div class="uk-grid-medium uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+    </div>
+    <div class="uk-grid-large uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+    </div>
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top" uk-grid>
+        <div>
+            <div class="uk-background-muted uk-padding">Item</div>
+        </div>
+        <div>
+            <div class="uk-background-primary uk-padding uk-light">Item</div>
+        </div>
+        <div>
+            <div class="uk-background-secondary uk-padding uk-light">Item</div>
+        </div>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Iconos</h1>
+    <h5 class="uk-text-center">Apretar el corazon para ver lista de iconos</h5>
+    <a href="https://getuikit.com/docs/icon" uk-icon="heart"></a>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Etiquetas</h1>
+    <span class="uk-label">Default</span>
+    <span class="uk-label uk-label-success">Correcto</span>
+    <span class="uk-label uk-label-warning">Aviso</span>
+    <span class="uk-label uk-label-danger">Peligro</span>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Imagenes</h1>
+    <div class="uk-child-width-1-3@m" uk-grid uk-lightbox="animation: scale">
+        <div>
+            <a class="uk-inline" href="images/alex-sh-dGdTaKvzmxc-unsplash.jpg" data-caption="Descripcion 1">
+                <img src="images/alex-sh-dGdTaKvzmxc-unsplash.jpg" width="1800" height="1200" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="images/alex-sh-ZsAfhWL6l3c-unsplash.jpg" data-caption="Descripcion 2">
+                <img src="images/alex-sh-ZsAfhWL6l3c-unsplash.jpg" width="1800" height="1200" alt="">
+            </a>
+        </div>
+        <div>
+            <a class="uk-inline" href="images/cash-dQJbYkexAdA-unsplash.jpg" data-caption="Descripcion 3">
+                <img src="images/cash-dQJbYkexAdA-unsplash.jpg" width="1800" height="1200" alt="">
+            </a>
+        </div>
+    </div> 
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Notificaciones</h1>
+    <p uk-margin>
+        <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam hic at ipsum quo unde illum in asperiores nisi natus repellendus possimus quis, maxime alias atque, fugiat, minus id accusamus corporis?', status: 'primary'})">Primario</button>
+        <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam hic at ipsum quo unde illum in asperiores nisi natus repellendus possimus quis minus id accusamus corporis?', status: 'success'})">Correcto</button>
+        <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam hic at ipsum quo unde illum in asperiores nisi', status: 'warning'})">Aviso</button>
+        <button class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.', status: 'danger'})">Peligro</button>
+        <button class="uk-button uk-button-default close" onclick="UIkit.notification.closeAll()">Cerrar todos</button>
+    </p>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Secciones</h1>
+    <div class="uk-section uk-section-muted">
+        <div class="uk-container">
+    
+            <h3>Titulo</h3>
+    
+            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Switchs</h1>
+    <ul class="uk-subnav uk-subnav-pill" uk-switcher>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+    </ul>
+    
+    <ul class="uk-switcher uk-margin">
+        <li>Hola!</li>
+        <li>Todo bien?</li>
+        <li>Adios!</li>
+    </ul>
+    <hr class="uk-divider-icon">
+    <h1 class="uk-text-center">Activar y tooltips</h1>
+    <div>
+        <button class="uk-button uk-button-default" type="button" uk-toggle="target: #toggle-usage" uk-tooltip="Hello World">Hola!</button>
+        <p id="toggle-usage">Como estas?</p>
+    </div>
+    <!-- Ir a arriba -->
+    <hr class="uk-divider-icon">
+    <div uk-scrollspy="cls:uk-animation-slide-left">
+        <h1 class="uk-text-center">Ir a</h1>
+    </div>
+    <div uk-scrollspy="cls:uk-animation-slide-right">
+        <h1 class="uk-text-center">Arriba</h1>
+    </div>
+    <a id="js-scroll-trigger" class="uk-button uk-button-primary" href="#target" uk-scroll>Subir</a>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>
