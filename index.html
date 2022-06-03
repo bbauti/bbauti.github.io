@@ -1,13 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="has-navbar-fixed-top">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+    <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-    <h1>Pagina de inicio para demos de frameworks</h1>
+    <!-- 
+        Inicio navbar 
+    -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <!-- 
+            Imagen cuando esta cerrado 
+        -->
+        <div class="navbar-brand">
+            <a class="navbar-item force-center" href="index.html">
+                <figure class="image is-32x32">
+                    <img src="logor.png" >
+                </figure>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <!-- -->
+        <div id="navbarTop" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+                <a class="navbar-item" href="http://www.tecnica1chacabuco.edu.ar/">
+                    EEST1
+                </a>
+                <!-- 
+                    Imagen medio 
+                -->
+                <a id="logo" class="navbar-item force-center" href="index.html">
+                    <figure class="image is-32x32">
+                        <img src="logor.png" >
+                    </figure>                    
+                </a>
+                <!-- -->
+                <a class="navbar-item">
+                    Info
+                </a>
+                <a class="navbar-item">
+                    Contacto
+                </a>
+            </div>
+            <div class="navbar-end">
+                <!-- 
+                    Dropdown (Ocultar si es un guest) 
+                -->
+                    <div class="navbar-item has-dropdown">
+                        <button class="button is-info is-light navbar-link" style="margin: 0.5rem">Usuario</button>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" href="#">Inventario</a>
+                            <a class="navbar-item"href="#">Perfil</a>
+                            <hr class="navbar-divider"/>
+                            <a class="navbar-item"href="#">Cerrar sesion</a>
+                        </div>
+                    </div>
+                <!-- -->
+                <!-- 
+                    Botones registro y inicio sesion 
+                    (Ocultar si es un usuario) 
+                -->
+                <div class="navbar-item">
+                    <div class="buttons">
+                        <a class="button is-primary">
+                            <strong>Registrarse</strong>
+                        </a>
+                        <a class="button is-light">
+                            Iniciar Sesion
+                        </a>
+                    </div>
+                </div>
+                <!-- -->
+            </div>
+        </div>
+    </nav>
+    <!-- -->  
+    <h1>Pagina de inicio para demos</h1>
     <ul>
         <li><a href="bulma.html">Framework Bulma</a></li> <!-- Listo -->
         <li><a href="bootstrap.html">Framework Bootstrap</a></li> <!-- Listo -->
@@ -16,5 +90,6 @@
         <li><a href="purecss.html">Framework PureCSS</a></li> <!-- Listo -->
         <li><a href="spectre.html">Framework Spectre</a></li> <!-- Listo -->
     </ul>
+    <script src="navbar.js"></script>
 </body>
 </html>
