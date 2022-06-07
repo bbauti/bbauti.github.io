@@ -1,77 +1,12 @@
 <!DOCTYPE html>
-<html class="has-navbar-fixed-top">
+<html>
 <head>
-    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>BBAUTI</title>
 </head>
 <body>
-    <!-- 
-        Inicio navbar
-    -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="navegacion principal">
-        <div class="navbar-brand">
-            <!-- Menu home -->
-            <a class="navbar-item force-center" href="index.html">
-                <figure class="image is-32x32">
-                    <img src="logor.png" >
-                </figure>
-                <p style="padding-left: 5px">Tecnica</p>
-            </a>
-            <!--  -->
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar1">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div id="navbar1" class="navbar-menu">
-            <div class="navbar-start">
-                <!-- 
-                    Menu de navegacion
-                -->
-                <p class="navbar-item esconder">/</p>
-                <a class="navbar-item" href="http://www.tecnica1chacabuco.edu.ar/">EEST1</a>
-                <a class="navbar-item">Info</a>
-                <a class="navbar-item">Contacto</a>
-                <!--  -->
-            </div>
-            <div class="navbar-end">
-                <!-- 
-                    Menu de usuario 
-                    (Ocultar si es un guest) 
-                -->
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Usuario
-                    </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="#">Inventario</a>
-                        <a class="navbar-item"href="#">Perfil</a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item"href="#">Cerrar sesion</a>
-                    </div>
-                </div>
-                <!-- 
-                    Botones registro y inicio sesion 
-                    (Ocultar si es un usuario) 
-                -->
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a class="button is-primary">
-                            <strong>Registrarse</strong>
-                        </a>
-                        <a class="button is-light">
-                            Iniciar Sesion
-                        </a>
-                    </div>
-                </div>
-                <!-- -->
-            </div>
-        </div>
-    </nav>
-    <!-- 
-        Fin navbar
-    -->
     <h1>Pagina de inicio para demos</h1>
+    <h1>Demos de frameworks de css</h1>
     <ul>
         <li><a href="bulma.html">Framework Bulma</a></li> <!-- Listo -->
         <li><a href="bootstrap.html">Framework Bootstrap</a></li> <!-- Listo -->
@@ -80,6 +15,9 @@
         <li><a href="purecss.html">Framework PureCSS</a></li> <!-- Listo -->
         <li><a href="spectre.html">Framework Spectre</a></li> <!-- Listo -->
     </ul>
-    <script src="navbar.js"></script>
+    <h1>Otro</h1>
+    <ul>
+        <li><a href="navbar.html">Demo navbar</a></li>
+    </ul>
 </body>
 </html>
