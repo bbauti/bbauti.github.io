@@ -5,63 +5,51 @@
 </head>
 <body>
     <!-- 
-        Inicio navbar 
+        Inicio navbar
     -->
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <!-- 
-            Imagen cuando esta cerrado 
-        -->
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="navegacion principal">
         <div class="navbar-brand">
+            <!-- Menu home -->
             <a class="navbar-item force-center" href="index.html">
                 <figure class="image is-32x32">
-                    <img src="logor.png" >
+                    <img src="../static/images/logor.png" >
                 </figure>
+                <p style="padding-left: 5px">Tecnica</p>
             </a>
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <!--  -->
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar1">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
-        <!-- -->
-        <div id="navbarTop" class="navbar-menu">
+        <div id="navbar1" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item">
-                    Home
-                </a>
-                <a class="navbar-item" href="http://www.tecnica1chacabuco.edu.ar/">
-                    EEST1
-                </a>
                 <!-- 
-                    Imagen medio 
+                    Menu de navegacion
                 -->
-                <a id="logo" class="navbar-item force-center" href="index.html">
-                    <figure class="image is-32x32">
-                        <img src="logor.png" >
-                    </figure>                    
-                </a>
-                <!-- -->
-                <a class="navbar-item">
-                    Info
-                </a>
-                <a class="navbar-item">
-                    Contacto
-                </a>
+                <p class="navbar-item esconder">/</p>
+                <a class="navbar-item" href="http://www.tecnica1chacabuco.edu.ar/">EEST1</a>
+                <a class="navbar-item">Info</a>
+                <a class="navbar-item">Contacto</a>
+                <!--  -->
             </div>
             <div class="navbar-end">
                 <!-- 
-                    Dropdown (Ocultar si es un guest) 
+                    Menu de usuario 
+                    (Ocultar si es un guest) 
                 -->
-                    <div class="navbar-item has-dropdown">
-                        <button class="button is-info is-light navbar-link" style="margin: 0.5rem">Usuario</button>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="#">Inventario</a>
-                            <a class="navbar-item"href="#">Perfil</a>
-                            <hr class="navbar-divider"/>
-                            <a class="navbar-item"href="#">Cerrar sesion</a>
-                        </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Usuario
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="#">Inventario</a>
+                        <a class="navbar-item"href="#">Perfil</a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item"href="#">Cerrar sesion</a>
                     </div>
-                <!-- -->
+                </div>
                 <!-- 
                     Botones registro y inicio sesion 
                     (Ocultar si es un usuario) 
@@ -80,7 +68,9 @@
             </div>
         </div>
     </nav>
-    <!-- -->  
+    <!-- 
+        Fin navbar
+    -->
     <h1>Pagina de inicio para demos</h1>
     <ul>
         <li><a href="bulma.html">Framework Bulma</a></li> <!-- Listo -->
