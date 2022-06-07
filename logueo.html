@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Titulo</title>
+</head>
+<body>
+    <div class="container section">
+        <h1 class="title is-2">Iniciar sesion</h1>
+        <h2 class="subtitle is-4">Inicia sesion en tu cuenta para poder modificar los valores.</h2>
+        <form name="form1" method="post" action="submit" id="form" class="box">
+            <div class="columns">
+                <div class="column field">
+                    <label class="label is-size-4" for="dni">Documento<br></label>
+                    <div class="control">
+                        <input class="input" type="dni" name="dni" id="dni" title="Requisitos: 7 a 8 numeros." required pattern="[0-9]{7,8}" placeholder="Documento">
+                    </div>
+                </div>
+                <div class="column field">
+                    <label class="label is-size-4" for="contraseña">Contraseña<br></label>
+                    <div class="control">
+                        <input class="input" type="password" name="contraseña" id="contraseña" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder="Contraseña">
+                    </div>
+                </div>
+            </div>
+                <div class="block has-text-centered">
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Recordarme
+                    </label>
+                </div>
+                <div class="block has-text-centered">
+                    <input class="button is-primary is-large is-big" type="submit" name="enviar" value="Enviar">
+                </div>
+                <div class="block has-text-centered">
+                    <a href="registro.html">No tenes una cuenta? Registrate!</a>
+                </div>
+                <div class="block has-text-centered">
+                    <a href="#">Olvidaste tu contraseña?</a>
+                </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Titulo</title>
+</head>
+<body>
+    <div class="container section">
+        <h1 class="title is-2">Deja tu consulta!</h1>
+        <h2 class="subtitle is-4">Te responderemos lo mas rapido posible a tu correo!</h2>
+        <form name="form1" method="post" action="submit" id="form" class="box">
+            <div class="columns">
+                <div class="column field">
+                    <label class="label is-size-4" for="nombre">Nombre</label>
+                    <div class="control">
+                        <input class="input" type="text" name="nombre" id="nombre" title="Requisitos: 2 a 30 caracteres, guiones, apostrofes o espacios." required pattern="[a-zA-Z. '-]{2,30}" placeholder="Nombre">
+                    </div>
+                </div>
+                <div class="column field">
+                    <label class="label is-size-4" for="correo">Correo</label>
+                    <div class="control">
+                        <input class="input" type="email" name="correo" id="correo" required placeholder="Correo">
+                    </div>
+                </div>
+                <div class="column field">
+                    <label class="label is-size-4" for="telefono">Numero de celular</label>
+                    <div class="control">
+                        <input class="input" type="tel" name="tel" id="telefono" title="Requisitos: 10 digitos, simbolo Mas, parentesis." pattern="^(?:(?:[+ \d()]{10,20})?)$" placeholder="Numero de celular">
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column field">
+                    <label class="label is-size-4" for="consulta">Consulta</label>
+                    <div class="control">
+                        <textarea class="textarea" name="consulta" id="consulta" title="Requisitos: poner consulta." placeholder="e.j.  Mi duda es..."></textarea>
+                    </div>
+                </div>
+            </div>
+                <div class="block has-text-centered">
+                    <input class="button is-primary is-large is-big" type="submit" name="enviar" value="Enviar">
+                </div>
+        </form>
+    </div>
+</body>
+</html>
